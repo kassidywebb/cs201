@@ -110,53 +110,13 @@
                   <label class="md-nav__title" for="__toc">Page Contents</label>
                   <ul class="md-nav__list" data-md-scrollfix>
                     <li class="md-nav__item">
-                      <a href="#Decreasekey-Fibheap" class="md-nav__link">
-                        Decreasekey Fibheap
+                      <a href="#class-notes" class="md-nav__link">
+                        Class Notes
                       </a>
-                      <a href="#delete-avl" class="md-nav__link">
-                        Delete Avl
-                      </a>
-                      <a href="#delete-rb" class="md-nav__link">
-                        Delete RB
-                      </a>
-                      <a href="#dynamic-etc" class="md-nav__link">
-                        Dynamic Etc
-                      </a>
-                      <a href="#dynamic" class="md-nav__link">
-                        Dynamic
-                      </a>
-                      <a href="#extract-fibheap" class="md-nav__link">
-                        Extract Fibheap
-                      </a>
-                      <a href="#glossary-avl" class="md-nav__link">
-                        Glossary Avl
-                      </a>
-                      <a href="#glossary-fibheap" class="md-nav__link">
-                        Glossary Fibheap
-                      </a>
-                      <a href="#glossary-rb" class="md-nav__link">
-                        Glossary RB
-                      </a>
-                      <a href="#heaps" class="md-nav__link">
-                        Heaps
-                      </a>
-                      <a href="#insert-avl" class="md-nav__link">
-                        Insert Avl
-                      </a>
-                      <a href="#insert-fibheap" class="md-nav__link">
-                        Insert Fibheap
-                      </a>
-                      <a href="#insert-rb" class="md-nav__link">
-                        Insert RB
-                      </a>
-                      <a href="#order" class="md-nav__link">
-                        Order
-                      </a>
-                      <a href="#summations" class="md-nav__link">
-                        Summations
-                      </a>
-                      <a href="#union-fibheap" class="md-nav__link">
-                        Union Fibheap
+                    </li>
+                    <li class="md-nav__item">
+                      <a href="#data-structures" class="md-nav__link">
+                        Data Structures
                       </a>
                     </li>
                   </ul>
@@ -168,56 +128,82 @@
           <!-- page content -->
           <div class="md-content">
             <article class="md-content__inner md-typeset">
-                <h1 id="home">Notes</h1>
-                <a href="./pdfs/decreasekey-fibheap.pdf" title="Decreasekey Fibheap" class="md-nav__link" id="#Decreasekey-Fibheap">
-                  Decreasekey Fibheap
-                </a>
-                <a href="./pdfs/delete-avl.pdf" title="Delete Avl" class="md-nav__link" id="#delete-avl">
-                  Delete Avl
-                </a>
-                <a href="./pdfs/delete-rb.pdf" title="Delete RB" class="md-nav__link" id="#delete-rb">
-                  Delete RB
-                </a>
-                <a href="./pdfs/dynamic etc.pdf" title="Dynamic Etc" class="md-nav__link" id="#dynamic-etc">
-                  Dynamic Etc
-                </a>
-                <a href="./pdfs/dynamic.pdf" title="Dynamic" class="md-nav__link" id="#dynamic">
-                  Dynamic
-                </a>
-                <a href="./pdfs/extract-fibheap.pdf" title="Extract Fibheap" class="md-nav__link" id="#extract-fibheap">
-                  Extract Fibheap
-                </a>
-                <a href="./pdfs/glossary-avl.pdf" title="Glossary Avl" class="md-nav__link" id="#glossary-avl">
-                  Glossary Avl
-                </a>
-                <a href="./pdfs/glossary-fibheap.pdf" title="Glossary Fibheap" class="md-nav__link" id="#glossary-fibheap">
-                  Glossary Fibheap
-                </a>
-                <a href="./pdfs/glossary-rb.pdf" title="Glossary RB" class="md-nav__link" id="#glossary-rb">
-                  Glossary RB
-                </a>
-                <a href="./pdfs/heaps.pdf" title="Heaps" class="md-nav__link" id="#heaps">
-                  Heaps
-                </a>
-                <a href="./pdfs/insert-avl.pdf" title="Insert Avl" class="md-nav__link" id="#insert-avl">
-                  Insert Avl
-                </a>
-                <a href="./pdfs/insert-fibheap.pdf" title="Insert Fibheap" class="md-nav__link" id="#insert-fibheap">
-                  Insert Fibheap
-                </a>
-                <a href="./pdfs/insert-rb.pdf" title="Insert RB" class="md-nav__link" id="#insert-rb">
-                  Insert RB
-                </a>
-                <a href="./pdfs/order.pdf" title="Order" class="md-nav__link" id="#order">
-                  Order
-                </a>
-                <a href="./pdfs/summations.pdf" title="Summations" class="md-nav__link" id="#summations">
-                  Summations
-                </a>
-                <a href="./pdfs/union-fibheap.pdf" title="Union Fibheap" class="md-nav__link" id="#union-fibheap">
-                  Union Fibheap
-                </a>
-
+                <!-- Class Notes -->
+                <h1 id="class-notes">Class Notes</h1>
+                <h4>01/09/2020 (Class 1)</h4>
+                  <p>Big O Notation: f(m) &epsilon; O(g(m)) if &#398;c,m. s.t.  O&#8804;f(m)&#8804;c*g(m)  &emsp; &forall;m>m<sub>0</sub> </p>
+                  <blockquote>Read as: "f(m) is within O(g(m)) if there exists a c and an m such that O&#8804;f(m)&#8804;c*g(m) for all m>m<sub>0</blockquote>
+                  <blockquote>Example:
+                    <p>f(m) = 13m<sup>2</sup> + 10m + 1000</p>
+                    <p>13m<sup>2</sup> + 10m + 1000 &#8804; c * m<sup>2</sup>  &emsp;  &forall;m>m<sub>0</sub></p>
+                    <p>13 + <sup>10</sup>&frasl;<sub>m</sub> + <sup>1000</sup>&frasl;<sub>m<sup>2</sup></sub> &#8804; c    &emsp; &forall;m>m<sub>0</sub></p>
+                    <p>Let m<sub>0</sub>=32</p>
+                    <p><sup>1000</sup>&frasl;<sub>m<sup>2</sup></sub> &lt; 1 &emsp;  &forall;m>m<sub>0</sub></p>
+                    <p><sup>10</sup>&frasl;<sub>m</sub> &lt; 1 &emsp;  &forall;m>m<sub>0</sub></p>
+                    <p>So, 13 + <sup>10</sup>&frasl;<sub>m</sub> + <sup>1000</sup>&frasl;<sub>m<sup>2</sup></sub> &lt; 15 &forall;m>m<sub>0</sub></p>
+                    <p>Therefore, C = 15</p>
+                    <p>f(m) &epsilon; O(m<sup>2</sup>)</p>
+                  </blockquote>
+                <h4>01/14/2020 (Class 2)</h4>
+                  <p>Notes</p>
+                <h4>01/16/2020 (Class 3)</h4>
+                  <p>Notes</p>
+                <h4>01/21/2020 (Class 4)</h4>
+                  <p>Notes</p>
+                
+                </br></br></br></br>
+              
+                <!-- Data Structures -->
+                <h1 id="data-structures">Data Structures</h1>
+                  <a href="./pdfs/decreasekey-fibheap.pdf" title="Decreasekey Fibheap" class="md-nav__link" id="#Decreasekey-Fibheap">
+                    Decreasekey Fibheap
+                  </a>
+                  </a>
+                  <a href="./pdfs/delete-avl.pdf" title="Delete Avl" class="md-nav__link" id="#delete-avl">
+                    Delete Avl
+                  </a>
+                  <a href="./pdfs/delete-rb.pdf" title="Delete RB" class="md-nav__link" id="#delete-rb">
+                    Delete RB
+                  </a>
+                  <a href="./pdfs/dynamic etc.pdf" title="Dynamic Etc" class="md-nav__link" id="#dynamic-etc">
+                    Dynamic Etc
+                  </a>
+                  <a href="./pdfs/dynamic.pdf" title="Dynamic" class="md-nav__link" id="#dynamic">
+                    Dynamic
+                  </a>
+                  <a href="./pdfs/extract-fibheap.pdf" title="Extract Fibheap" class="md-nav__link" id="#extract-fibheap">
+                    Extract Fibheap
+                  </a>
+                  <a href="./pdfs/glossary-avl.pdf" title="Glossary Avl" class="md-nav__link" id="#glossary-avl">
+                    Glossary Avl
+                  </a>
+                  <a href="./pdfs/glossary-fibheap.pdf" title="Glossary Fibheap" class="md-nav__link" id="#glossary-fibheap">
+                    Glossary Fibheap
+                  </a>
+                  <a href="./pdfs/glossary-rb.pdf" title="Glossary RB" class="md-nav__link" id="#glossary-rb">
+                    Glossary RB
+                  </a>
+                  <a href="./pdfs/heaps.pdf" title="Heaps" class="md-nav__link" id="#heaps">
+                    Heaps
+                  </a>
+                  <a href="./pdfs/insert-avl.pdf" title="Insert Avl" class="md-nav__link" id="#insert-avl">
+                    Insert Avl
+                  </a>
+                  <a href="./pdfs/insert-fibheap.pdf" title="Insert Fibheap" class="md-nav__link" id="#insert-fibheap">
+                    Insert Fibheap
+                  </a>
+                  <a href="./pdfs/insert-rb.pdf" title="Insert RB" class="md-nav__link" id="#insert-rb">
+                    Insert RB
+                  </a>
+                  <a href="./pdfs/order.pdf" title="Order" class="md-nav__link" id="#order">
+                    Order
+                  </a>
+                  <a href="./pdfs/summations.pdf" title="Summations" class="md-nav__link" id="#summations">
+                    Summations
+                  </a>
+                  <a href="./pdfs/union-fibheap.pdf" title="Union Fibheap" class="md-nav__link" id="#union-fibheap">
+                    Union Fibheap
+                  </a>
             </article>
           </div>
 
